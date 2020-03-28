@@ -11,7 +11,7 @@ module.exports = {
 
     async create(req, res) {
 
-        const {name, email, whatsaap, city, uf} = req.body;
+        const {name, email, whatsapp, city, uf} = req.body;
     
         const id = crypt.randomBytes(4).toString('HEX')
     
@@ -19,7 +19,7 @@ module.exports = {
             id, 
             name,
             email,
-            whatsaap,
+            whatsapp,
             city, 
             uf
         });
